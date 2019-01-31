@@ -70,9 +70,9 @@ namespace DatingApp.API.Data
 
             return false;
         }
-        public async Task<bool> EmailExists(string username)
+        public async Task<bool> EmailExists(string email)
         {
-            if (await _context.Users.AnyAsync( x => x.Username == username ))
+            if (await _context.Users.AnyAsync( x => x.Email == email ))
                 return true;
 
             return false;
