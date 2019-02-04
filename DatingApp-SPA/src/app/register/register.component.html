@@ -2,41 +2,50 @@
   <h2 class="text-center text-primary">Sign Up</h2>
   <hr />
 
-  <div class="form-group">
-    <input
-      type="text"
-      class="form-control"
-      required
-      name="username"
-      [(ngModel)]="model.username"
-      placeholder="Username"
-    />
+  <div class="form-group row">
+    <label for="email" class="col-sm-3 col-form-label">Email: </label>
+    <div class="col-sm-9">
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="email"
+        [(ngModel)]="model.email"
+        placeholder="email@example.com"
+      />
+    </div>
   </div>
 
-  <div class="form-group">
-    <input
-      type="text"
-      class="form-control"
-      required
-      name="email"
-      [(ngModel)]="model.email"
-      placeholder="Email"
-    />
+  <div class="form-group row">
+    <label for="username" class="col-sm-3 col-form-label">Username: </label>
+    <div class="col-sm-9">
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="username"
+        [(ngModel)]="model.username"
+      />
+    </div>
   </div>
 
-  <div class="form-group">
-    <input
-      type="password"
-      class="form-control"
-      required
-      name="password"
-      [(ngModel)]="model.password"
-      placeholder="Password"
-    />
+  <div class="form-group row">
+    <label for="password" class="col-sm-3 col-form-label">Password: </label>
+    <div class="col-sm-9">
+      <input
+        type="password"
+        class="form-control"
+        required
+        name="password"
+        [(ngModel)]="model.password"
+      />
+    </div>
   </div>
 
   <div class="form-group text-center">
     <button class="btn btn-success mr-2" type="submit">Register</button>
-    <button class="btn btn-danger" type="button" (click)="cancel()">Cancel</button>
+    <button class="btn btn-danger" type="button" (click)="cancel()">
+      Cancel
+    </button>
   </div>
 </form>
