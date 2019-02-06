@@ -7,7 +7,7 @@ import { Resolve, Router, ActivatedRouteSnapshot } from '@angular/router';
 import { UserService } from '../_services/user.service';
 
 @Injectable()
-export class MemeberListResolver implements Resolve<User[]> {
+export class MemberListResolver implements Resolve<User[]> {
 
   constructor(private userService: UserService, private router: Router,
               private alertify: AlertifyService) {}
